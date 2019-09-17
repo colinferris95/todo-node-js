@@ -1,0 +1,53 @@
+.jumbotron #todo{
+
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+
+}
+
+#create{
+	
+	position:relative;
+}
+
+#create a{
+
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+
+.clicked{
+
+	text-decoration: line-through;
+}
+
+
+.main{
+
+	margin-top:2em;
+}
+
+
+body h1{
+
+	font-family: 'Merriweather', serif;
+}
+
+body h2{
+
+	font-family: 'Merriweather', serif;
+	font-size: 2em !important;
+}
+
+body a{
+
+	font-family: 'Merriweather', serif;
+}
+
+body span{
+
+	font-family: 'Merriweather', serif;
+}

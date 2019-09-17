@@ -1,0 +1,50 @@
+<% include ./partials/header.ejs %>
+
+
+
+<div class="container main">
+
+	<div class="jumbotron">
+
+
+		<form action="/todos" method="post" onsubmit="return formValidateNew()">
+
+			
+				<input type="hidden" name="id" value="<%=newId%>">
+		
+
+
+			<div class="form-group">
+				<label for="title">Todo item <span id="empty"></span></label>
+
+				<input type="text" class="form-control" id="title" name="title">
+			</div>
+
+
+			<div class="form-group">
+
+				<label for="task">Todo description</label>
+
+				
+
+
+				<textarea class="form-control" id="task"  name="task">
+
+
+				</textarea>
+			</div>
+
+			
+				
+			<button type="submit" class="btn btn-secondary" value="submit">Submit</button>
+
+
+		</form>
+
+
+		<a class="text-danger" href="/todos">Cancel</a>
+	</div>
+
+</div>
+
+<% include ./partials/footer.ejs %>

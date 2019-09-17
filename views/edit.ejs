@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+<% include ./partials/header %>
+
+
+
+
+
+
+<div class="container main">
+
+	<div class="jumbotron">
+
+
+		
+		<form action="/todos/<%= todoValue.id %>?_method=PUT" method="post" onsubmit="return formValidateNew()">
+		
+
+			
+				
+		
+
+
+			<div class="form-group">
+				<label for="title">Todo item <span id="empty"></span></label>
+
+				<input type="text" class="form-control" id="title" name="title" value="<%= todoValue.title %>">
+			</div>
+
+
+			<div class="form-group">
+
+				<label for="task">Todo description</label>
+
+			
+
+				<textarea class="form-control" id="task"  name="task">
+					<%- todoValue.task %>
+
+				</textarea>
+			</div>
+
+			
+				
+			<button type="submit" class="btn btn-secondary" value="submit">Submit</button>
+
+
+		</form>
+
+
+		<a class="text-danger" href="/todos">Cancel</a>
+			
+
+				
+
+			
+
+				
+			
+
+		
+</div>
+
+
+
+<% include ./partials/footer %>

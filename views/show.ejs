@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+<% include ./partials/header %>
+
+
+
+
+
+
+<div class="container main">
+
+	<div class="jumbotron">
+
+
+		
+			
+
+				<div id="todo">
+
+			
+
+					
+    				<div>	
+								<h2  >
+
+									<%= todoValue.title %>
+
+								</h2>
+
+								
+							
+					</div>
+
+					<p>
+								
+							<%- todoValue.task %>
+								</p>
+
+
+				
+
+
+
+
+
+		<form action="/todos/<%= todoValue.id %>/edit" method="GET">
+			<button type="submit" class="btn btn-primary">edit</button>
+		</form>
+
+
+
+			<form action="/todos/<%= todoValue.id %>?_method=DELETE" method="POST">
+				<button type="submit" class="btn btn-danger">delete</button>
+
+			</form>
+
+			</div>
+
+		
+</div>
+
+
+
+<% include ./partials/footer %>
